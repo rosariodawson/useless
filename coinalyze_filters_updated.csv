@@ -1,0 +1,46 @@
+Column Name,Short Label/Threshold,Formula (Coinalyze-safe),Notes
+Fut/Spot Vol Ratio (trap>4),Fut/Spot Vol ratio >4 trap,(AVG(vol_5m[-1:-5])+1)/(AVG(volspot_5m[-1:-5])+1),Use >4 to flag perp-led traps; add +1 guards per playbook.
+"BuySellVolume (5m, 45m span)",BuySellVol >0.2 pump,(SUM(volbuy_5m[0:-9]) - SUM(volsell_5m[0:-9])) / (AVG(vol_5m[0:-9])+1),Normalize by AVG(vol_5m)+1 to avoid spikes.
+"Core Trio 3 (%Δ OI 1h, 12h)",Core Trio 3 > 10,"PCHANGE(oi_1h[0,-12])",HTF OI thrust; >10 bullish.
+"Core Trio 1 (%Δ Spot CVD 1h,12h)",Core Trio 1 > 15,"PCHANGE(CVDSPOT('1h',20,true)[0,-12])",Spot leadership; normalize=true for percent.
+"Core Trio 2 (%Δ Perp CVD 1h,12h)",Core Trio 2 < -15,"PCHANGE(CVD('1h',20,true)[0,-12])",Futures distribution if deeply negative.
+"CVD Div (spot-perp, 25m norm)",CVD Div : Dump=<=-0.1 pump=>0.1,"((CVDSPOT('5m',20,true)[0]-CVDSPOT('5m',20,true)[-5])/(AVG(volspot_5m[-5:-1])+1)) - ((CVD('5m',20,true)[0]-CVD('5m',20,true)[-5])/(AVG(vol_5m[-5:-1])+1))",Positive => spot-led; negative => perp-led dump risk.
+Spot CVD slope per vol (25m),Spot CVD slope 25m,"(CVDSPOT('5m',20,true)[0]-CVDSPOT('5m',20,true)[-5])/(AVG(volspot_5m[-5:-1])+1)",Use >0 for accumulation slope.
+Spot-led Divergence (1h),CVD spot led diverg,"PCHANGE(CVDSPOT('1h',20,true)[0,-1]) - PCHANGE(CVD('1h',20,true)[0,-1])",>0 means spot leading > perp.
+Daily Spot Accumulation %,Daily Spot Accumulation,"PCHANGE(CVDSPOT('1d',20,true)[0,-5])",>15 strong.
+EXIT: Leverage Exhaustion,EXIT : Leverage Exhaustion Ratio > 1.5,"(PCHANGE(price_5m[0,-3])*fr_5m[0]*1000)/(PCHANGE(oi_5m[0,-3])+1)",>1.5 = leverage over-extension (exit).
+Explosion OI Exhaustion,OI score <0 = pump over,"CHANGE(oi_1h[0,-1])/(AVG(oi_1h[-3:-1])+1) - PCHANGE(price_1h[0,-1])",<0 flags top exhaustion.
+Pre-Pump: Spot CVD Lead,Spot CVD Divergence Lead>2,"PCHANGE(CVDSPOT('1h',20,true)[0,-1]) - PCHANGE(price_1h[0,-1])",>2 predictive.
+Pump Top Check (perp vs px), < -1 = pump over,"PCHANGE(CVD('1h',20,true)[0,-1]) - (PCHANGE(price_1h[0,-1])*2)",<-1 exit warning.
+Explosive Breakout Score,Explosive Breakout >0.5 = breakout,"(PCHANGE(oi_1h[0,-3]) + PCHANGE(CVDSPOT('1h',20,true)[0,-3])) / (((MAX(price_1h[-4:-1]) - MIN(price_1h[-4:-1])) / (SMA(price_1h,4)[0]+0.001))*10)",>0.5 suggests fresh breakout.
+Funding Rate Anomaly (1h AVG),Funding Rate Anomaly,AVG(fr_1h[0:-11]),Context only.
+Healthy Leverage Growth (1h),Healthy Leverage Growth > 0.05,"PCHANGE(oi_1h[0,-6])",>0.05 = constructive.
+Hourly Bid-Side Pressure,Hourly Bid-Side Pressure,SUM(volbuy_1h[0:-5]) / (SUM(volsell_1h[0:-5])+1),>1.5 accumulation.
+Hourly Volume Persistence,Hourly Volume Persistence,AVG(vol_1h[0:-3]) / (AVG(vol_1h[-24:-4])+1),>2 sustained.
+HTF Stealth Accum Breakout,HTF Stealth Accumulation Breakout > 8,"PCHANGE(oi_1h[0,-4]) + PCHANGE(CVDSPOT('1h',20,true)[0,-10]) - (PCHANGE(price_1h[0,-4])*PCHANGE(price_1h[0,-4]))",>8 strong HTF break.
+HTF Vol-Weighted OI Break,HTF Volume-Weighted OI Breakout,"PCHANGE(oi_1h[0,-1]) * (vol_1h[0] / (AVG(vol_1h[0:-10])+1))",High when fresh OI + big vol.
+L1 SHORT: Spot CVD accel,Spot CVD acceleration down,"PCHANGE(CVDSPOT('1h',10,true)[0,-1]) - PCHANGE(CVDSPOT('1h',10,true)[-1,-2])",<0 down accel.
+Layer1: Spot CVD vs Price (1d),Layer 1 : Spot CVD vs. Price Divergence >10,"PCHANGE(CVDSPOT('1d',20,true)[0,-9])",>10 bullish bias.
+Layer1 pt2: Price Drift (1d),Layer 1 Stealth pt2 : OI Growth in Consolidation > -5,"PCHANGE(price_1d[0,-9])",Use near 0 to ensure consolidation.
+Layer1 pt1: OI Growth (1d),Layer 1:Sustained OI Growth pt1 > 15,"PCHANGE(oi_1d[0,-9])",Target >15.
+Layer2: Vol Persistence (1h),Layer 2 : Volume Persistence Pre-Breakout > 2,vol_1h[0] / (AVG(vol_1h[-10:-1])+1),>2 pre-breakout.
+Long-Squeeze Exhaustion (1h),>+2 = long reversal soon,"(-PCHANGE(price_1h[0,-1])) - PCHANGE(oi_1h[0,-1])",>2 reversal risk.
+LTF Momentum Ignition,LTF Momentum Ignition,"(PCHANGE(CVDSPOT('5m',30,true)[0,-1])*1.5) + PCHANGE(oi_5m[0,-1])",>10 ignition.
+LTF Momentum Ignition Score,LTF Momentum Ignition Score > 3.5,"(PCHANGE(price_5m[0,-1])*1.5) + (vol_5m[0]/(SMA(vol_5m,20)[0]+1))",>3.5 strong.
+Nihilus vol 1d spike,Nihilus vol 1 > 2,"vol_1d[0] / (SMA(vol_1d,20)[0] + 1)",>2 HTF activity.
+nihilus_2: OI Fuel Meter,nihilus_2 OI Fuel ≥2.2 explosion,"(PCHANGE(oi_5m[0,-5])*1.5) + PCHANGE(CVDSPOT('5m',20,true)[0,-1]) - (fr_5m[0]*500)",>=2.2 explosion; 1.4–2.1 trend; <1.4 skip.
+nihilus_3: Spot-Led Commitment,Spot-Led Commitment Score >2,"(PCHANGE(CVDSPOT('1h',20,true)[0,-1]) - PCHANGE(price_1h[0,-1])) * (SMA(volspot_1h,3)[0]/(AVG(vol_1h[-10:-1])+1))",>2 strong spot lead.
+OI Fuel 1h change,OI Fuel 1hr change,"PCHANGE(oi_1h[-1,-2])",Prev-to-prior hour.
+OI Multi-TF Score,OI Multi-TF Score,"(PCHANGE(oi_5m[0,-5]) + PCHANGE(oi_1h[0,-1]) + PCHANGE(oi_1h[0,-3]))/3",>0.6 build; <-0.6 unwind.
+OI Unwind Trigger (5m),OI unwind : > 0= cascade dump starting,"-PCHANGE(oi_5m[0,-3])",>0 = unwind.
+OI-Dollar Pulse 5m,oi price corr( +ve = pump),((oi_5m[0]*price_5m[0] - oi_5m[-3]*price_5m[-3]) / ((oi_5m[-3]*price_5m[-3])+0.001))*100,Correlates OI notional change.
+Predicted FR change 1h,pred fr change 1hr,"PCHANGE(pfr_1h[0,-1])",Funding shift lead.
+Price Δ 15m (ROC),Price Chg 15 m,"ROC(price_5m,3)[0]",3*5m bars.
+Spot Vol Expansion (5m),Spot Volume Expansion,"SMA(volspot_5m,3)[0] / (AVG(volspot_5m[-20:-1])+1)",>1.1 expansion.
+Stealth Accum Signal (1h),Stealth accum >5,"PCHANGE(oi_1h[0,-1]) - ((PCHANGE(price_1h[0,-1])*PCHANGE(price_1h[0,-1]))/100*5)",>5 pre-breakout.
+Stealth OI Accum (flat px),Stealth OI Accum>4,"PCHANGE(oi_1h[0,-1]) - 3*((PCHANGE(price_1h[0,-1])*PCHANGE(price_1h[0,-1]))/100)",>4 constructive.
+Stealth OI Accum 20h,OI Change 20h > 10,"PCHANGE(oi_1h[0,-20])",>10 good.
+Price Range% 20h,price change 20h < 0.05,"((MAX(price_1h[-20:-1]) - MIN(price_1h[-20:-1])) / (SMA(price_1h,20)[0]+0.001))",<0.05 = flat.
+Sustained OI Growth (1d),Sustained OI Growth,"PCHANGE(oi_1d[0,-5]) - PCHANGE(price_1d[0,-5])",>10 strong if price flat.
+Taker Sell Pressure 1h,sell dom >0.55,SUM(volsell_1h[0:-1]) / (SUM(vol_1h[0:-1])+1),>0.55 dump risk.
+Vol Spike 5m %,vol spike > 500,"PCHANGE(vol_5m[0,-1])",>500% spike.
