@@ -1,0 +1,612 @@
+treCheckPro version: 6.8.3 (68032)
+Report generated: 2025-10-10 15:20:31
+Download EtreCheckPro from https://etrecheck.com
+Runtime: 10:53
+Performance: Poor
+
+Problem: Computer is too slow
+
+Major Issues:
+  Anything that appears on this list needs immediate attention. 
+  Battery failure - Your battery is reporting that it needs to be serviced.
+  Unsigned files - There are unsigned software files installed that could be malicious and should be reviewed.
+  Heavy CPU usage - Some processes are using an unusually high amount of CPU.
+  Low disk space - This computer is running critically low on free hard drive space.
+
+Minor Issues:
+  These issues do not need immediate attention but they may indicate future problems or opportunities for improvement. 
+  SSD too slow - SSD is showing poor performance.
+  System extensions installed - This computer has system extensions installed. System extensions can be difficult to uninstall.
+  No Time Machine backup - Time Machine backup not found.
+  Heavy RAM usage - Apps are using a large amount of RAM.
+  High battery cycle count - Your battery may be losing capacity.
+  Apps crashing - There have been numerous app crashes.
+  Apps with heavy CPU usage - There have been numerous cases of apps with heavy CPU usage.
+  Unsigned files - There are unsigned software files installed. These files could be old, incompatible, and cause problems. They should be reviewed.
+  Runaway user process - A user process is using a large percentage of your CPU.
+  External drives and performance - There are external drives connected that could be affecting performance.
+  Limited permissions - More information may be available with Full Disk Access.
+  Kernel extensions present - This computer has kernel extensions that may not work in the future.
+
+Hardware Information:
+  MacBook Pro (15-inch, 2019)
+    Status: Supported
+  MacBook Pro Model: MacBookPro15,3
+  2.3 GHz 8-Core Intel Core i9 (i9-9880H) CPU: 8-core
+  32 GB RAM - Not upgradeable
+    BANK 0/ChannelA-DIMM0 - 16 GB DDR4 2400  
+    BANK 2/ChannelB-DIMM0 - 16 GB DDR4 2400  
+  Battery: Health = Service Battery - Cycle count = 2441
+
+Video Information:
+  Intel UHD Graphics 630 - VRAM: 1536 MB
+    Color LCD (built-in) 3360 x 2100
+  Radeon Pro Vega 20 - VRAM: 4 GB
+
+Drives:
+  disk0 - APPLE SSD AP0512M 500.28 GB (Solid State - TRIM: Yes) 
+  Internal PCI-Express 8.0 GT/s x4 NVM Express
+    disk0s1 - EFI [EFI] 315 MB
+    disk0s2 [APFS Container] 499.96 GB
+      disk1 [APFS Virtual drive] 499.96 GB (Shared by 7 volumes)
+        disk1s1 (APFS) [APFS Container] (11.26 GB used)
+          disk1s1s1 - U********2 (APFS) [APFS Snapshot] (11.26 GB used)
+        disk1s2 - Preboot (APFS) [APFS Preboot] (2.54 GB used)
+        disk1s3 - Recovery (APFS) [Recovery] (1.33 GB used)
+        disk1s4 - VM (APFS) [APFS VM] (8.59 GB used)
+        disk1s5 - U**********  - Data (APFS) [APFS Virtual drive] (452.91 GB used)
+        disk1s6 - Update (APFS) (2 MB used)
+        disk1s7 - R****************O (APFS) (15.35 GB used)
+
+  disk2 - Apple Disk Image 23 MB () 
+  External Virtual Interface
+    disk2s1 - T*********8 (Mac OS Extended) 23 MB (16 MB used)
+
+  disk3 - Apple Disk Image 50 MB () 
+  External Virtual Interface
+    disk3s1 - T*********8 (Mac OS Extended) 50 MB (34 MB used)
+
+Mounted Volumes:
+  disk1s1s1 - U********2 [APFS Snapshot]
+    Filesystem: APFS
+    Mount point: /
+    Read-only: Yes
+    Used: 11.26 GB
+    Shared values
+      Size: 499.96 GB
+      Free: 7.82 GB
+      Available: 8.48 GB
+
+  disk1s2 - Preboot [APFS Preboot]
+    Filesystem: APFS
+    Mount point: /System/Volumes/Preboot
+    Used: 2.54 GB
+    Shared values
+      Size: 499.96 GB
+      Free: 7.82 GB
+
+  disk1s4 - VM [APFS VM]
+    Filesystem: APFS
+    Mount point: /System/Volumes/VM
+    Used: 8.59 GB
+    Shared values
+      Size: 499.96 GB
+      Free: 7.82 GB
+
+  disk1s5 - U**********  - Data [APFS Virtual drive]
+    Filesystem: APFS
+    Mount point: /System/Volumes/Data
+    Encrypted
+    Used: 452.91 GB
+    Shared values
+      Size: 499.96 GB
+      Free: 7.82 GB
+      Available: 8.48 GB
+
+  disk1s6 - Update
+    Filesystem: APFS
+    Mount point: /System/Volumes/Update
+    Used: 2 MB
+    Shared values
+      Size: 499.96 GB
+      Free: 7.82 GB
+
+  disk1s7 - R****************O
+    Filesystem: APFS
+    Mount point: /Volumes/R****************O
+    Read-only: Yes
+    Used: 15.35 GB
+    Shared values
+      Size: 499.96 GB
+      Free: 7.82 GB
+
+  disk2s1 - T*********8
+    Filesystem: Mac OS Extended
+    Disk Image
+    Mount point: /Volumes/T*********8
+    Owners enabled: No
+    Read-only: Yes
+    Used: 16 MB
+    Size: 23 MB
+    Free: 7 MB
+
+  disk3s1 - T*********8
+    Filesystem: Mac OS Extended
+    Disk Image
+    Mount point: /Volumes/T***********1
+    Owners enabled: No
+    Read-only: Yes
+    Used: 34 MB
+    Size: 50 MB
+    Free: 16 MB
+
+Network:
+  Interface en0: Wi-Fi
+    802.11 a/b/g/n/ac
+  Interface bridge0: Thunderbolt Bridge
+  Interface en6: iPhone
+
+System Software:
+  15.6.1 15.6.1 (24G90) 
+  Time since boot: About 3 days
+
+Security:
+  Gatekeeper: App Store and identified developers
+  System Integrity Protection: Enabled
+
+  Antivirus software: Apple
+
+Unsigned Files:
+  Launchd: ~/Library/LaunchAgents/com.DigiDNA.iMazing2Mac.Mini.plist
+    Executable: /Applications/iMazing.app/Contents/MacOS/iMazing Mini.app/Contents/MacOS/iMazing Mini
+
+  Launchd: /Library/LaunchDaemons/com.rugarciap.TurboBoost260Helper.plist
+    Executable: /Library/PrivilegedHelperTools/com.rugarciap.TurboBoost260Helper
+
+  Running app: /Applications/PDF Expert.app/Contents/MacOS/PDF Expert
+  Running app: /Applications/App Cleaner 8.app/Contents/MacOS/App Cleaner 8
+  Running app: /Applications/Gemini 2.app/Contents/MacOS/Gemini 2
+  Running app: /Applications/Smooze Pro.app/Contents/MacOS/Smooze Pro
+  Running app: /private/var/folders/_j/l5wvvcsj6rl13ht4w8ymrg2m0000gn/T/AppTranslocation/8CF848C1-428D-4ED7-83C4-CE955B3017DD/d/MacDown.app/Contents/MacOS/MacDown
+  Running app: /Applications/Turbo Boost Switcher Pro.app/Contents/MacOS/Turbo Boost Switcher Pro
+  Running app: /Applications/CleanShot X.app/Contents/MacOS/CleanShot X
+  Running app: /private/var/folders/_j/l5wvvcsj6rl13ht4w8ymrg2m0000gn/T/AppTranslocation/E6DF6D72-DDD4-4E6D-A0C7-DF56FBCC0CC7/d/EtreCheckPro.app/Contents/MacOS/EtreCheckPro
+
+  Login Item: /Applications/TG Pro.app/Contents/Library/LoginItems/TGProLaunchHelper.app
+
+  Plugin: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin
+
+  Preference panel: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/deploy/JavaControlPanel.prefPane
+
+  Apps: 8
+
+Applications:
+  157 apps
+  34 x86-only apps
+  6 unsigned apps
+
+System Extensions:
+  [Running] ProtonVPN WireGuard - version 5.1.0 (ProtonVPN AG - 2025-09-19)
+    Application: /Applications/ProtonVPN.app - version 5.1.0 (ProtonVPN AG - 2025-09-19)
+
+  [Running] Little Snitch Network Extension - version 5.7.1 (Objective Development Software GmbH - 2023-09-21)
+    Application: /Applications/Little Snitch.app - version 5.7.1 (Not found!)
+    Description: This system extension enables Little Snitch to filter network traffic.
+
+  [Running] NetworkExtension - version 1.2 (Juuso Salonen - 2023-04-25)
+    Application: /Applications/Radio Silence.app - version 1.2 (Juuso Salonen - 2023-04-25)
+
+  [Running] ProtonVPN OpenVPN - version 3.0.15 (ProtonVPN AG - 2023-07-26)
+    Application: /Applications/ProtonVPN.app - version 3.0.15 (ProtonVPN AG - 2025-09-19)
+
+Kernel Extensions:
+  /Library/Extensions
+    [Loaded] HighPointIOP.kext - com.highpoint-tech.kext.HighPointIOP (4.4.5 - SDK 10.15)
+    [Loaded] HighPointRR.kext - com.highpoint-tech.kext.HighPointRR (4.22.1 - SDK 10.12)
+    [Loaded] SiLabsUSBDriver64.kext - com.silabs.driver.CP210xVCPDriver64 (3.0.0d1)
+    [Loaded] SoftRAID.kext - com.softraid.driver.SoftRAID (6.3.1 - SDK 12)
+
+System Launch Daemons:
+  [Not Loaded]  41 Apple tasks
+  [Loaded]  173 Apple tasks
+  [Running]  201 Apple tasks
+  [Other]  4 Apple tasks
+
+System Launch Agents:
+  [Not Loaded]  20 Apple tasks
+  [Loaded]  180 Apple tasks
+  [Running]  249 Apple tasks
+
+Launch Daemons:
+  [Running] at.obdev.littlesnitch.daemon.plist (Objective Development Software GmbH - installed 2024-08-25)
+    Executable: /Library/Application Support/Objective Development/Little Snitch/Components/at.obdev.littlesnitch.daemon.bundle/Contents/MacOS/at.obdev.littlesnitch.daemon
+
+  [Not Loaded] com.adobe.ARMDC.Communicator.plist (Adobe Inc. - installed 2025-09-07)
+    Executable: /Library/PrivilegedHelperTools/com.adobe.ARMDC.Communicator
+
+  [Not Loaded] com.adobe.ARMDC.SMJobBlessHelper.plist (Adobe Inc. - installed 2025-09-07)
+    Executable: /Library/PrivilegedHelperTools/com.adobe.ARMDC.SMJobBlessHelper
+
+  [Running] com.bjango.istatmenus.daemon.plist (Bjango Pty Ltd - installed 2023-09-26)
+    Executable: /Library/Application Support/iStat Menus 6/iStatMenusDaemon
+
+  [Running] com.bjango.istatmenus.fans.plist (Bjango Pty Ltd - installed 2023-09-26)
+    Executable: /Library/Application Support/iStat Menus 6/iStatMenusFans
+
+  [Loaded] com.bjango.istatmenus.installerhelper.plist (Bjango Pty Ltd - installed 2023-07-31)
+    Executable: /Library/PrivilegedHelperTools/com.bjango.istatmenus.installerhelper
+
+  [Running] com.crystalidea.macsfancontrol.smcwrite.plist (Ilya Parniuk - installed 2025-07-23)
+    Executable: /Library/PrivilegedHelperTools/com.crystalidea.macsfancontrol.smcwrite
+
+  [Not Loaded] com.microsoft.teams.TeamsUpdaterDaemon.plist (Not signed - installed 2024-05-14)
+    
+
+  [Running] com.rugarciap.TurboBoost260Helper.plist (Not signed - installed 2025-07-23)
+    Executable: /Library/PrivilegedHelperTools/com.rugarciap.TurboBoost260Helper
+
+Launch Agents:
+  [Running] com.bjango.istatmenus.agent.plist (Bjango Pty Ltd - installed 2023-09-26)
+    Executable: /Library/Application Support/iStat Menus 6/iStatMenusAgent.app/Contents/MacOS/iStatMenusAgent
+
+  [Running] com.bjango.istatmenus.status.plist (Bjango Pty Ltd - installed 2023-09-26)
+    Executable: /Library/Application Support/iStat Menus 6/iStat Menus Status.app/Contents/MacOS/iStat Menus Status
+
+  [Loaded] com.radiosilenceapp.agent.plist (Juuso Salonen - installed 2022-10-02)
+    Command: /Applications/Radio Silence.app/Contents/MacOS/Radio Silence -silent
+
+User Launch Agents:
+  [Not Loaded] com.DigiDNA.iMazing2Mac.Mini.plist (Not signed - installed 2025-09-27)
+    Executable: /Applications/iMazing.app/Contents/MacOS/iMazing Mini.app/Contents/MacOS/iMazing Mini
+
+  [Loaded] com.google.GoogleUpdater.wake.plist (Google LLC - installed 2025-09-23)
+    Command: ~/Library/Application Support/Google/GoogleUpdater/Current/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake-all --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+
+  [Loaded] com.microsoft.EdgeUpdater.wake.plist (Microsoft Corporation - installed 2025-09-24)
+    Command: ~/Library/Application Support/Microsoft/EdgeUpdater/Current/EdgeUpdater.app/Contents/MacOS/EdgeUpdater --wake-all --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+
+User Login Items:
+  [Not Loaded] App Cleaner Helper (Nektony LLC - installed 2025-09-26)
+    Modern Login Item
+    /Applications/App Cleaner 8.app/Contents/Library/LoginItems/App Cleaner Helper N.app
+
+  [Not Loaded] App Cleaner Monitor N (Nektony LLC - installed 2025-09-26)
+    Modern Login Item
+    /Applications/App Cleaner 8.app/Contents/Library/LoginItems/App Cleaner Monitor N.app
+
+  [Loaded] CopyClipHelper (App Store - installed 2025-09-07)
+    Modern Login Item
+    /Applications/CopyClip.app/Contents/Library/LoginItems/CopyClipHelper.app
+
+  [Loaded] Curiota Login (App Store - installed 2025-09-16)
+    Modern Login Item
+    /Applications/Curiota.app/Contents/Library/LoginItems/Curiota Login.app
+
+  [Running] Google Chrome (Google LLC - installed 2025-10-10)
+    Application
+    /Applications/Google Chrome.app
+
+  [Not Loaded] HotspotShieldHelper (App Store - installed 2025-10-07)
+    Modern Login Item
+    /Applications/Hotspot Shield.app/Contents/Library/LoginItems/HotspotShieldHelper.app
+
+  [Not Loaded] StartAtLoginHelper (App Store - installed 2025-10-07)
+    Modern Login Item
+    /Applications/Hotspot Shield.app/Contents/Library/LoginItems/StartAtLoginHelper.app
+
+  [Not Loaded] LaunchHelper (App Store - installed 2025-09-25)
+    Modern Login Item
+    /Applications/Memory Diag.app/Contents/Library/LoginItems/LaunchHelper.app
+
+  [Not Loaded] Launcher Disabler (App Store - installed 2025-10-04)
+    Modern Login Item
+    /Applications/OneDrive.app/Contents/Library/LoginItems/Launcher Disabler.app
+
+  [Loaded] OneDrive Launcher (App Store - installed 2025-10-04)
+    Modern Login Item
+    /Applications/OneDrive.app/Contents/Library/LoginItems/OneDrive Launcher.app
+
+  [Not Loaded] LaunchAtLoginHelper (Max Kovalenko - installed 2025-09-22)
+    Modern Login Item
+    /Applications/Shottr.app/Contents/Library/LoginItems/LaunchAtLoginHelper.app
+
+  [Not Loaded] TGProLaunchHelper (Not signed - installed 2025-10-10)
+    Modern Login Item
+    /Applications/TG Pro.app/Contents/Library/LoginItems/TGProLaunchHelper.app
+
+  [Not Loaded] TabbyLauncher (App Store - installed 2025-10-10)
+    Modern Login Item
+    /Applications/Tabby.app/Contents/Library/LoginItems/TabbyLauncher.app
+
+  [Not Loaded] TinyStopwatchHelper (App Store - installed 2025-09-24)
+    Modern Login Item
+    /Applications/TinyStopwatch.app/Contents/Library/LoginItems/TinyStopwatchHelper.app
+
+  [Not Loaded] znote Login Helper (App Store - installed 2025-09-24)
+    Modern Login Item
+    /Applications/znote.app/Contents/Library/LoginItems/znote Login Helper.app
+
+  [Not Loaded] PasswordsMenuBarExtra (Apple - installed 2025-08-17)
+    Modern Login Item
+    /System/Applications/Passwords.app/Contents/Library/LoginItems/PasswordsMenuBarExtra.app
+
+App Extensions:
+  Widgets:
+    Widgets - /Applications/PDF Expert.app
+    Widgets - /Applications/Timer RH.app
+    Memory Diag - /Applications/Memory Diag.app
+    Widget - /Applications/Zerion.app
+    Microsoft Edge Widgets - /Applications/Microsoft Edge.app
+    UnwatchedWidget - /Applications/Unwatched.app
+    Taio - /Applications/Taio.app
+    iStat Menus - /Applications/iStat Menus.app
+    FloatingClockExtension - /Applications/AClock.app
+
+  Plugins:
+    WidgetHandler - /Applications/Crypto Pro.app
+    Taio - /Applications/Taio.app
+    Intent - /Applications/Zerion.app
+    Intents - /Applications/WhatsApp.app
+    VPNProxyExtension - /Applications/DuckDuckGo.app/Contents/Library/LoginItems/DuckDuckGo VPN.app
+    ProtonVPN Plutonium - /Applications/ProtonVPN.app
+
+  VPNs:
+    HSSHydraNetworkExtension - /Applications/Hotspot Shield.app
+    HSSWireGuardNetworkExtension - /Applications/Hotspot Shield.app
+    HydraTunnelProvider - /Applications/Hotspot Shield.app
+    DuckDuckGo VPN Network Extension - /Applications/DuckDuckGo.app/Contents/Library/LoginItems/DuckDuckGo VPN.app
+
+  Finder sync extensions:
+    OneDrive Finder Integration - /Applications/OneDrive.app
+    FinderSyncMenu - /Applications/JioAICloud.app
+
+  Notification providers:
+    ServiceExtension - /Applications/WhatsApp.app
+    NotificationService - /Applications/Zerion.app
+
+  File providers:
+    OneDrive File Provider - /Applications/OneDrive.app
+
+  Action services:
+    Save to Taio - /Applications/Taio.app
+
+  Share services:
+    Curiota - /Applications/Curiota.app
+    Telegram - /Applications/Telegram.app
+    Pin to the Screen - /Applications/CleanShot X.app
+    Zight - /Applications/Zight.app
+    Annotate - /Applications/CleanShot X.app
+
+  Ad-blockers:
+    AdGuard General - /Applications/AdGuard for Safari.app
+    AdGuard Security - /Applications/AdGuard for Safari.app
+    AdGuard Social - /Applications/AdGuard for Safari.app
+    AdGuard Custom - /Applications/AdGuard for Safari.app
+    AdGuard Other - /Applications/AdGuard for Safari.app
+    AdGuard Privacy - /Applications/AdGuard for Safari.app
+    AdBlock Engine - /Applications/AdBlock.app
+
+  Safari extensions:
+    TabbyExtension - /Applications/Tabby.app
+    Open in IINA - /Applications/IINA.app
+    miniVideo Extension - /Applications/miniVideo.app
+    AdBlock Icon - /Applications/AdBlock.app
+    AdGuard for Safari - /Applications/AdGuard for Safari.app
+    Sink It for Reddit Extension - /Applications/Sink It.app
+
+  QuickLook Previews:
+    BeeViewerQuickLook - /Applications/XiaoSaiViewer.app
+      dyn.ah62d4rv4ge80w5pb *.ima
+      org.nema.dicom *.dcm
+    QuickLookExtension - /Applications/CleanShot X.app
+      com.cleanshot.document *.cleanshot
+
+  QuickLook Thumbnails:
+    BeeViewerThumbnail - /Applications/XiaoSaiViewer.app
+      dyn.ah62d4rv4ge80w5pb *.ima
+      org.nema.dicom *.dcm
+    QuickLookThumbnailingExtension - /Applications/CleanShot X.app
+      com.cleanshot.document *.cleanshot
+
+Internet Plug-ins:
+  JavaAppletPlugin:  (? - installed 2023-09-22)
+
+Audio Plug-ins:
+  AppleAES3Audio: 3.0 (Apple - installed 2025-05-31)
+  MSTeamsAudioDevice: 2023.31.01.2 (Microsoft Corporation - installed 2023-08-07)
+  CleanShot Device: 2.0.0-SNAPSHOT-4960342 (Make The Web Oślizło & Magiera s.c. - installed 2025-07-22)
+  ACE: 11.5.0 (Rogue Amoeba Software, LLC - installed 2021-01-09)
+  JustStreamAudioDriver: 2.0 (Electronic Team, Inc. - installed 2021-12-22)
+
+3rd Party Preference panels:
+  Java (? - installed 2023-06-15)
+
+Backup:
+  Time Machine Not Configured!
+
+Performance:
+  System Load: 10.41 (1 min ago) 20.44 (5 min ago) 17.30 (15 min ago)
+  Nominal I/O usage: 1.70 MB/s
+  File system: 37.20 seconds
+  Write speed: 198 MB/s
+  Read speed: 2454 MB/s
+
+CPU Usage Snapshot:
+  Type Overall
+  System: 2 %
+  User: 13 %
+  Idle: 84 %
+
+Top Processes Snapshot by CPU:
+  Process (count) CPU (Source - Location)
+  Brave Browser Helper (Renderer) (85) 179.60 % (Brave Software, Inc.)
+  EtreCheckPro 53.70 % (Not signed - Translocated)
+  Google Chrome Helper (Renderer) (13) 44.22 % (Google LLC)
+  WindowServer 15.18 % (Apple)
+  Activity Monitor 10.04 % (Apple)
+
+Top Processes Snapshot by Memory:
+  Process (count) RAM usage (Source - Location)
+  Brave Browser Helper (Renderer) (85) 10.21 GB (Brave Software, Inc.)
+  Google Chrome Helper (Renderer) (13) 1.23 GB (Google LLC)
+  EtreCheckPro 1.22 GB (Not signed - Translocated)
+  Opera Helper (Renderer) (16) 934 MB (Opera Software AS)
+  Brave Browser 608 MB (Brave Software, Inc.)
+
+Top Processes Snapshot by Network Use:
+  Process (count) Input / Output (Source - Location)
+  Transmission 6.57 GB / 189 MB (Digital Ignition LLC)
+  mDNSResponder 21 MB / 11 MB (Apple)
+  SubmitDiagInfo 240 KB / 1 KB (Apple)
+  netbiosd 64 KB / 152 KB (Apple)
+  biometrickitd 173 KB / 35 KB (Apple)
+
+Top Processes Snapshot by Energy Use:
+  Process (count) Energy (0-100) (Source - Location)
+  Brave Browser Helper (Renderer) (85) 19 (Brave Software, Inc.)
+  WindowServer 5 (Apple)
+  backgroundtaskmanagementd 3 (Apple)
+  Google Chrome He (3) 1 (Not signed)
+  Google Chrome 1 (Google LLC)
+
+Virtual Memory Information:
+  Physical RAM: 32 GB
+
+  Free RAM: 748 MB
+  Used RAM: 24.10 GB
+  Cached files: 7.17 GB
+
+  Available RAM: 7.90 GB
+  Swap Used: 6.78 GB
+
+Software Installs (past 60 days):
+  Install Date Name (Version)
+  2025-08-11 AdBlock (2.1.11)
+  2025-08-11 AdGuard for Safari (1.11.22)
+  2025-08-20 BetterPlayer (1.4.6)
+  2025-08-20 Picture-In-Picture (1.0)
+  2025-08-20 miniVideo (1.3.1)
+  2025-08-22 CSV Editor Pro X (1.2)
+  2025-08-24 LiquidText (7.0.27)
+  2025-08-25 macOS 15.6.1 (15.6.1)
+  2025-08-27 Pages (14.4)
+  2025-08-30 Bookerei (1.10.0)
+  2025-09-05 Telegram (11.15.1)
+  2025-09-07 Adobe Acrobat 24.005 AIO UB No Account (1.0)
+  2025-09-07 CopyClip (1.9.82)
+  2025-09-09 Private VPN (1.2)
+  2025-09-09 Turbo VPN (2.7.0)
+  2025-09-09 Kingpin Private Browser (2.1.9)
+  2025-09-11 XProtectCloudKitUpdate (5314)
+  2025-09-12 Mini Stopwatch (2.5)
+  2025-09-13 WinkNotes (2.17.0)
+  2025-09-13 Nextcloud Client
+  2025-09-16 Stickier (2.0.3)
+  2025-09-16 Curiota (3.5)
+  2025-09-18 CryptocurrencyTicker (1.2.4)
+  2025-09-18 DU Recorder (1.0.3)
+  2025-09-18 Zight (8.5.3)
+  2025-09-18 SCRecorder (1.0.3)
+  2025-09-18 Screen Recording Helper (1.1)
+  2025-09-18 Camp (1.1.1)
+  2025-09-19 PDF Viewer (2025.10)
+  2025-09-19 NeverNap (1.3)
+  2025-09-19 Perplexity (2.250825.0)
+  2025-09-20 Plume (1.1)
+  2025-09-20 kneeboard (1)
+  2025-09-20 Jot (1.0)
+  2025-09-20 状态栏小本本 (1.0.2)
+  2025-09-20 MoodBar (2)
+  2025-09-22 Gerry - gif screen recorder (1.2)
+  2025-09-22 PasteKit (1.1.2)
+  2025-09-24 TinyStopwatch (2.5)
+  2025-09-24 One Markdown (1.6.2)
+  2025-09-24 Markdown Editor (1.5.0)
+  2025-09-24 Bear (2.6.1)
+  2025-09-24 Simplenote (2.21)
+  2025-09-24 uFocus (3.19.3)
+  2025-09-24 Taio (1.68.0)
+  2025-09-24 Metion (3.7.4)
+  2025-09-24 Obsidian Web Clipper (0.11.9)
+  2025-09-24 Markdown Panda (2.3.0)
+  2025-09-24 Markdown Editor Plus (1.0.1)
+  2025-09-24 NanoMD (0.3.3)
+  2025-09-24 Markdown Viewer Offline (1.0.1)
+  2025-09-24 MarkSlides (1.02)
+  2025-09-24 Izumo (1.10.1)
+  2025-09-24 ciRRus Layer (1.1.1)
+  2025-09-24 SnippetsLab (2.6.1)
+  2025-09-24 Meny (1.6)
+  2025-09-24 znote (1.3.0)
+  2025-09-24 LowHumming (1.0.23)
+  2025-09-24 MindBox (1.0.15)
+  2025-09-24 melior (1.0.8)
+  2025-09-25 Memory Diag (2.5.1)
+  2025-09-25 Microsoft To Do (2.156)
+  2025-09-25 Actions (3.9.0)
+  2025-09-25 Clip-It (2.1.0)
+  2025-09-30 ScreenSnapAI (1.5.4)
+  2025-09-30 DuckDuckGo (1.158.0)
+  2025-09-30 Muse Mate (1.1.0)
+  2025-10-03 Scriptation (5.1.4)
+  2025-10-03 ‎WhatsApp (25.27.73)
+  2025-10-04 OneDrive (25.174.0907)
+  2025-10-07 Mobile Device (1.0.0.0)
+  2025-10-07 Hotspot Shield (6.16.0)
+  2025-10-07 Menubar Notes (5.1.1)
+  2025-10-08 Unwatched (1.7.1)
+  2025-10-09 XProtectPlistConfigData (5318)
+  2025-10-10 Sink It for Reddit (7.100.0)
+  2025-10-10 Cydog Browser (21.0)
+  2025-10-10 Float (6.0)
+  2025-10-10 TabScroll (2.5.1)
+  2025-10-10 ︎FastBack (1.0)
+  2025-10-10 Tabby (3.0.0)
+  2025-10-10 Asobi (1.5.1)
+  2025-10-10 Maxthon Browser (5.1.70)
+
+Diagnostics Information (past 7-30 days):
+  2025-10-10 15:04:44 rmdinspect Crash (2 times)
+    Executable: /System/Library/PrivateFrameworks/RemoteManagement.framework/rmdinspect
+
+  2025-10-10 15:04:44 managedsettingsdiagnoticstool Crash (2 times)
+    Executable: /System/Library/Frameworks/ManagedSettings.framework/managedsettingsdiagnoticstool
+
+  2025-10-10 12:26:15 Opera.app High CPU Use (3 times)
+    Executable: /Applications/Opera.app
+
+  2025-10-10 09:32:29 /Library/Logs/DiagnosticReports/ProxiedDevice-Bridge/stacks-2025-10-10-093229.ips Crash (2 times)
+
+  2025-10-10 04:23:11 knowledgeconstructiond High CPU Use (6 times)
+    Executable: /System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/Versions/A/knowledgeconstructiond
+
+  2025-10-09 20:11:11 spotlightknowledged High CPU Use (5 times)
+    Executable: /System/Library/Frameworks/CoreSpotlight.framework/spotlightknowledged
+
+  2025-10-09 10:10:42 deleted Crash
+    Executable: /System/Library/PrivateFrameworks/CacheDelete.framework/deleted
+    Details:
+      libdispatch.dylib: BUG IN CLIENT OF LIBDISPATCH: Release of a suspende
+      d object
+      Abort Cause 315252536556701465
+
+  2025-10-08 20:44:28 Adobe Acrobat.app High CPU Use
+    Executable: /Applications/Adobe Acrobat DC/Adobe Acrobat.app
+
+  2025-10-08 11:09:40 signpost_reporter High CPU Use
+    Executable: /usr/libexec/signpost_reporter
+
+  2025-10-07 20:13:07 fileproviderd High CPU Use
+    Executable: /System/Library/Frameworks/FileProvider.framework/Support/fileproviderd
+
+  2025-10-07 11:42:22 apfsd High CPU Use
+    Executable: /usr/libexec/apfsd
+
+  2025-10-07 11:01:27 rpcsvchost High CPU Use
+    Executable: /usr/libexec/rpcsvchost
+
+  2025-10-05 18:32:49 CEPHtmlEngine Helper Crash (25 times)
+    Executable: /Applications/Adobe Photoshop 2020/Adobe Photoshop 2020.app
+
+
+End of report
